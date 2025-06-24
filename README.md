@@ -16,6 +16,6 @@ To analyze this, I study a probabilistic model based on **binomial distributions
 
 # Motivational videos
 Before diving into the math, here are a couple of short videos that introduce some of the key concepts in a simple and engaging way. They caught my attention from the start I hope they do the same for you.
-[YouTube – Introductory Explanation](https://www.youtube.com/watch?v=ErunjUChFdg)
-[TikTok – Concept Poisson](https://vt.tiktok.com/ZSkrYqc4X/)
-[TikTok – Concept Binomial](https://vt.tiktok.com/ZSkr2R3Wo/)
+- [YouTube – Introductory Explanation](https://www.youtube.com/watch?v=ErunjUChFdg)
+- [TikTok – Concept Poisson](https://vt.tiktok.com/ZSkrYqc4X/)
+- [TikTok – Concept Binomial](https://vt.tiktok.com/ZSkr2R3Wo/)
