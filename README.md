@@ -80,6 +80,7 @@ To move from a simple random walk to a probabilistic expression, we make the fol
 
 $$
 P(X = k) = \binom{t}{k} \cdot p^k \cdot (1 - p)^{t - k}
+\quad \text{(3)}
 $$
 
 >Where:
@@ -117,7 +118,6 @@ Substituting $$\( p = \mu / t \)$$, we get:
 
 $$
 \lim_{t \to \infty} \binom{t}{k} \cdot \left( \frac{\mu}{t} \right)^k \cdot \left(1 - \frac{\mu}{t}\right)^{t - k}
-\quad \text{(4)}
 $$
 
 ---
