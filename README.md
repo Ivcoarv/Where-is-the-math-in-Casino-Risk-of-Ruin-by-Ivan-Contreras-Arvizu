@@ -70,7 +70,7 @@ $$
 > Here:
 - `k` is the **number of wins accumulated by the gambler**.
 - When `k ≤ n`, we calculate the chance that the gambler wins enough times to bring the casino's capital down to zero.
-- If `k > n`, the gambler has already passed the casino’s bankroll, so the risk of ruin becomes 100% basically 1.
+- If `k > n`, the gambler has already passed the casino’s bankroll, so the risk of ruin becomes 100% basically 1.>
 
 This expression gives us the "first version" of the Risk of Ruin (ROR) and shows how the win probability `p`, the number of gambler wins `k`, and the casino’s initial capital `n` are related.
 
