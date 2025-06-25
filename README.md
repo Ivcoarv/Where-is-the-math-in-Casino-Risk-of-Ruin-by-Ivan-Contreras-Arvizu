@@ -113,7 +113,7 @@ $$
 \lim_{t \to \infty} \binom{t}{k} \cdot p^k \cdot (1 - p)^{t - k}
 $$
 
-Substituting \( p = \mu / t \), we get:
+Substituting $$\( p = \mu / t \)$$, we get:
 
 $$
 \lim_{t \to \infty} \binom{t}{k} \cdot \left( \frac{\mu}{t} \right)^k \cdot \left(1 - \frac{\mu}{t}\right)^{t - k}
