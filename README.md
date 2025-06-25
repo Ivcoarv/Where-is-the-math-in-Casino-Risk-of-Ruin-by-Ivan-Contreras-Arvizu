@@ -271,7 +271,7 @@ $$
 \sum_{k=n+1}^{\infty} \frac{\mu^k}{k!} = \sum_{k=0}^{\infty} \frac{\mu^k}{k!} - \sum_{k=0}^{n} \frac{\mu^k}{k!}
 $$
 
-Using the identity for exponential series, thanks to the trick to avoid calculating to infity that we do before:
+By applying the identity of the exponential series, and using the earlier trick to avoid calculating an infinite sum directly, we can rewrite the expression in a more manageable form:
 
 $$
 \sum_{k=0}^{\infty} \frac{\mu^k}{k!} = e^{\mu}
@@ -292,7 +292,7 @@ $$
 Which becomes:
 
 $$
-- \sum_{k=0}^{n} \frac{\mu^k}{k!} (1 - p^{n-k})
+\-sum_{k=0}^{n} \frac{\mu^k}{k!} (1 - p^{n-k})
 $$
 
 Finally, take out the common factor:
@@ -301,11 +301,11 @@ $$
 \text{Pro}(n) = e^{-\mu} e^{\mu} - e^{-\mu} \sum_{k=0}^{n} \frac{\mu^k}{k!} (1 - p^{n-k})
 $$
 
-Since \( e^{-\mu} e^{\mu} = 1 \), the final expression becomes:
+Since $$ \( e^{-\mu} e^{\mu} = 1 \)$$, the final expression becomes:
 
 ---
 
-#### Final Probability of Ruin (before house edge):
+#### Final Probability of Ruin:
 
 $$
 \boxed{
