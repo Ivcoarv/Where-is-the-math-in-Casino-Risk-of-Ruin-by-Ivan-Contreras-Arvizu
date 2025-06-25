@@ -3,6 +3,8 @@ This repository explores the mathematical principles behind the concept of “Ri
 
 ## Personal Information
 
+My name is Iván Contreras Arvizu, and I am currently studying Mechanical Systems Engineering at Arkansas State University Campus Querétaro. Throughout my academic journey, I have completed courses such as Calculus I, II, and III, Linear Algebra, and Differential Equations, which have strengthened my interest in mathematics and its applications. This project was an opportunity to explore that interest further by connecting mathematical modeling with real-world scenarios combining probability theory, analysis, and a topic that was both intriguing and fun to study.
+
 ![](Hi video_second slide.gif)
 
 
