@@ -67,8 +67,7 @@ p^{n-k}, & \text{if } k \leq n \\
 \end{cases}
 $$
 
-Here:
-
+> Here:
 - `k` is the **number of wins accumulated by the gambler**.
 - When `k ≤ n`, we calculate the chance that the gambler wins enough times to bring the casino's capital down to zero.
 - If `k > n`, the gambler has already passed the casino’s bankroll, so the risk of ruin becomes 100% basically 1.
