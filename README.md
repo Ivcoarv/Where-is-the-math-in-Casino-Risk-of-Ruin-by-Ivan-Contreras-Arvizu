@@ -374,3 +374,18 @@ $$
 $$
 
 > Note: Using $$\( n(1 + a) \)$$ instead of $$\( n + (1 + a) \)$$ doesn’t change the meaning. It’s just a compact way to express the casino’s overall lead due to its advantage.
+
+## Summary and Conclusions
+
+The final formula gives us a mathematical approximation of the **Risk of Ruin** the probability that a casino might go bankrupt due to an unlikely but possible winning streak by a gambler. It combines concepts from **Poisson distribution** and incorporates the **house edge** to model this situation in a more realistic way.
+
+This formula is useful as a tool for risk estimation. With it, a casino (or even a game designer) can assess how likely it is to suffer major losses depending on the game’s win probabilities, betting patterns, and house advantage. It offers a clear and basic way to measure vulnerability, and that could help guide decisions on bet limits or search another strategies for the casino.
+
+While powerful, the model does have some limitations. First, it *assumes independence* between rounds, which doesn’t always reflect how real gamblers behave (for example, people often change bets based on previous wins or losses). Also, it treats all rounds as equal and doesn’t consider human factors like quitting behavior, strategies, or table limits. And although the house edge is included, *other variables* like emotional bias, side bets, or variations in game rules are not.
+
+So, while the formula offers a reliable statistical insight, it’s still a simplified model. And as I said could be a guide, it’s great for exploring theoretical risk, but shouldn’t be used as the only tool when making real-world decisions.
+
+So throughout this project, I faced multiple challenges especially learning more about probability, a topic I hadn’t formally studied before. Even though I found the topic engaging, some of the math behind it (like Poisson approximation and binomial distribution) was difficult at first. However, because I was genuinely interested in the subject, it helped me stay motivated and make sense of the formulas step by step.
+
+This work also helped me revisit previous math concepts like summations and its algebra, limits, factorials, and exponential functions, and it taught me how to formulate a theoretical problem with real-world analogies. Although casinos going bankrupt from one lucky player is rare, the project helped me connect abstract math with practical ideas like managing risk or designing fair systems. Overall, I think the project was worth the effort, both technically and personally.
+
