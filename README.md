@@ -317,7 +317,7 @@ This formula gives us the total probability that a gambler **eventually bankrupt
 
 ---
 
-#### House Edge \rightarrow the house always wins… Right?
+#### House Edge $$\rightarrow$$ the house always wins… Right?
 
 But wait!, the formula we’ve seen still isn’t complete.
 
