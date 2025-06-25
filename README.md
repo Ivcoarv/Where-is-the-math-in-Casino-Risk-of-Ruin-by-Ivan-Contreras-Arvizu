@@ -64,7 +64,7 @@ $$
 \begin{cases}
 p^{n-k}, & \text{if } k \leq n \\
 1, & \text{if } k > n
-\end{cases}
+\end{cases} \quad \text{(1)}
 $$
 
 >Here:
