@@ -82,14 +82,14 @@ $$
 P(X = k) = \binom{t}{k} \cdot p^k \cdot (1 - p)^{t - k}
 $$
 
-Where:
-- \( t \): total number of games played (number of experiments)
-- \( k \): number of wins by the gambler
-- \( p \): probability of winning a single game
-- \( 1 - p \): probability of losing (or the casino winning)
-- \( \binom{t}{k} \): number of combinations of `k` wins in `t` trials
+>Where:
+>- \( t \): total number of games played (number of experiments)
+>- \( k \): number of wins by the gambler
+>- \( p \): probability of winning a single game
+>- \( 1 - p \): probability of losing (or the casino winning)
+>- \( \binom{t}{k} \): number of combinations of `k` wins in `t` trials
 
 This formula gives us the probability of a specific outcome — for example, that the gambler wins **exactly 5 out of 100 games**.
 
-> This is a natural extension of the binomial walk model, because now we’re not just looking at what happens *step by step*, but what happens *after a large number of games*, and what the **distribution of outcomes** looks like.
+This is a natural extension of the binomial walk model, because now we’re not just looking at what happens *step by step*, but what happens *after a large number of games*, and what the **distribution of outcomes** looks like.
 
