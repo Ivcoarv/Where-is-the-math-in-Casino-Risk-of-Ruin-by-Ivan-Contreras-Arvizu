@@ -315,4 +315,52 @@ $$
 
 This formula gives us the total probability that a gambler **eventually bankrupts the casino**, by summing up all the ways it could happen up to the point $$\( k = n \)$$, where `n` is the number of rounds the casino can resist.
 
+---
+
+#### House Edge --> the house always wins… Right?
+
+But wait!, the formula we’ve seen still isn’t complete.
+
+Why? Well… we forgot one important thing: **the house always has an edge** Casinos don’t play fair they’re designed to win *in the long run*.  This advantage is what we call the **house edge**, and we represent it with the letter **`a`**.
+
+What does house edge really mean?
+
+Imagine a race between the gambler and the casino. Every time the gambler wins, they take one step forward. But every time the **casino** wins, it moves **more than one step** it gains a lead because of the house edge.
+
+So instead of the usual:
+
+- $$\( n \leftarrow n + 1 \)$$ when the casino wins  
+We now say:
+
+- $$\( n \leftarrow n + (1 + a) \)$$
+
+This means the gambler must now win even more times just to catch up and bankrupt the casino.   That extra effort that "unfair head start" is what makes the edge so powerful.
+
+---
+
+#### Updated Formula With House Edge
+
+We now update our original formula:
+
+$$
+\text{Pro}(n) = \sum_{k=0}^{\infty} \frac{\mu^k}{k!} e^{-\mu}
+\begin{cases}
+p^{n + (1 + a) - k}, & k \leq n \\
+1, & k > n
+\end{cases}
+$$
+
+And simplifying:
+
+$$
+\boxed{
+\text{Pro}(n) = 1 - e^{-\mu} \sum_{k=0}^{n} \frac{\mu^k}{k!} \left( 1 - p^{(n + (1 + a)) - k} \right)
+}
+$$
+
+---
+
+This is our final version of the **Risk of Ruin** formula now fully accounting for the casino’s built-in advantage.
+
+
 
