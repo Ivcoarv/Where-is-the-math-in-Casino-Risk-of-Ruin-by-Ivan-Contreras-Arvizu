@@ -145,17 +145,17 @@ $$
 Let’s say \( t = 100 \) and \( k = 2 \):
 
 $$
-\binom{100}{2} = \frac{100 \cdot 99}{2} = 4950
+\binom{100}{2} = \frac{100!}{2! \cdot 98!} = \frac{100 \cdot 99}{2} = 4950
 $$
 
-Now compare:
+Now compare with the approximation:
 
 $$
 \frac{100^2}{2!} = \frac{10000}{2} = 5000
 $$
 
 > **Note:**  
-> Even though $$\( \binom{t}{k} \)$$ and $$\( \frac{t^k}{k!} \)$$ are not exactly equal, they become very close when `t` is large and `k` is small.  This is why we can replace the binomial coefficient with a simpler form when applying the **Poisson approximation** — it simplifies the math significantly, while still giving us a good estimate.
+> Even though $$\( \binom{t}{k} \)$$ and $$\( \frac{t^k}{k!} \)$$ are not exactly equal, they become very close when `t` is large and `k` is small.  This is why we can replace the binomial coefficient with a simpler form when applying the **Poisson approximation** it simplifies the math significantly, while still giving us a good estimate.
 
 
 $$
