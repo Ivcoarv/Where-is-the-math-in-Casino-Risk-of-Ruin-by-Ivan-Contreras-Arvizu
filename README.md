@@ -93,3 +93,101 @@ This formula gives us the probability of a specific outcome — for example, tha
 
 This is a natural extension of the binomial walk model, because now we’re not just looking at what happens *step by step*, but what happens *after a large number of games*, and what the **distribution of outcomes** looks like.
 
+At this point, we move from the binomial model to something more practical for analyzing extreme but *rare scenarios* for example, a gambler getting incredibly lucky across many games.
+
+To do this, we assume:
+
+> The gambler has too much credit and is allowed to play a very large number of games, say `t → ∞`,  
+> and the probability of winning a single game `p` is very small.  
+> But the **expected number of wins** stays constant:  
+> 
+> $$
+> \mu = t \cdot p
+> $$
+
+Is this situation perfect for applying the **Poisson approximation**?, YES!.
+
+We start with the binomial probability:
+
+$$
+\lim_{t \to \infty} \binom{t}{k} \cdot p^k \cdot (1 - p)^{t - k}
+$$
+
+Substituting \( p = \mu / t \), we get:
+
+$$
+\lim_{t \to \infty} \binom{t}{k} \cdot \left( \frac{\mu}{t} \right)^k \cdot \left(1 - \frac{\mu}{t}\right)^{t - k}
+$$
+
+---
+
+#### How does this simplify?
+
+##### 1. **Simplifying the combination term**:
+
+The binomial coefficient:
+$$
+\binom{t}{k} = \frac{t!}{k!(t-k)!}
+$$
+
+When `t` is very large and `k` is small (say `k = 2` or `3`), we can approximate:
+
+$$
+\frac{t!}{(t - k)!} \approx t^k
+$$
+
+So:
+
+$$
+\binom{t}{k} \approx \frac{t^k}{k!}
+$$
+
+##### Example with small numbers:
+
+Let’s say \( t = 100 \) and \( k = 2 \):
+
+$$
+\binom{100}{2} = \frac{100 \cdot 99}{2} = 4950
+$$
+
+Now compare:
+
+$$
+\frac{100^2}{2!} = \frac{10000}{2} = 5000
+$$
+
+Pretty close! And the larger `t` gets, the closer the approximation becomes. That’s the idea behind:
+
+$$
+\binom{t}{k} \approx \frac{t^k}{k!}
+$$
+
+---
+
+##### 2. **Simplifying the exponential term**:
+
+As `t → ∞`, we use the identity:
+
+$$
+\lim_{t \to \infty} \left(1 - \frac{\mu}{t} \right)^{t} = e^{-\mu}
+$$
+
+So the full expression becomes:
+
+$$
+\lim_{t \to \infty} \binom{t}{k} \cdot \left( \frac{\mu}{t} \right)^k \cdot \left(1 - \frac{\mu}{t} \right)^{t - k}
+= \frac{\mu^k e^{-\mu}}{k!}
+$$
+
+---
+
+#### What does this mean?
+
+We now have a clean, simple way to calculate the probability that the gambler wins exactly `k` times **when the number of games is very large**:
+
+$$
+P(X = k) = \frac{\mu^k e^{-\mu}}{k!}
+$$
+
+This is the **Poisson distribution**, and it becomes the foundation of the final model.
+
