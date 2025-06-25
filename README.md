@@ -325,7 +325,10 @@ Why? Well… we forgot one important thing: **the house always has an edge** Cas
 
 What does house edge really mean?
 
-Imagine a race between the gambler and the casino. Every time the gambler wins, they take one step forward. But every time the **casino** wins, it moves **more than one step** it gains a lead because of the house edge.
+Example:
+Let’s take a practical example: imagine a player at a blackjack table. On average, for every $100 the player bets, they only win back around $99 the casino keeps $1. That $1 is the **house edge** a small built-in advantage (in this case, 1%). It might seem small, but over hundreds or thousands of rounds, it adds up. Mathematically, this means the casino doesn't just move one step forward when it wins it moves more than one, putting the player at an increasing disadvantage the longer the game goes on. That’s why the gambler needs to win more often (and more consistently) just to catch up and that’s the core idea behind adding the house edge to the Risk of Ruin model.
+
+Back to the formula is a race between the gambler and the casino. Every time the gambler wins, they take a step forward. But every time the casino wins, it moves more than one step it gains a lead because of the house edge.
 
 $$
 n \leftarrow
