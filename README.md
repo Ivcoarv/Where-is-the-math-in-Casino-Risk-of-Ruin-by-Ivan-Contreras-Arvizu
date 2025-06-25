@@ -187,16 +187,9 @@ $$
 
 This is the **Poisson distribution**, and it becomes the foundation of the final model.
 
----
 #### Poisson Approach – Total Probability of Ruin
 
-Now that we have the Poisson distribution:
-
-$$
-P(k) = \frac{\mu^k e^{-\mu}}{k!}
-$$
-
-We use it to calculate **how many rounds `k` the player needs to break the casino**.
+Now that we have the Poisson distribution, we use it to calculate **how many rounds `k` the player needs to break the casino**.
 
 But we don't just want the probability of **one specific `k`**, right?  
 We want to compute the **total probability** that the player wins in any possible way that causes the casino to go bankrupt.
@@ -209,6 +202,7 @@ $$
 p^{n-k}, & \text{if } k \leq n \\
 1, & \text{if } k > n
 \end{cases}
+\quad \text{(4}
 $$
 
 This function splits into two parts:
@@ -312,6 +306,7 @@ $$
 \boxed{
 \text{Pro}(n) = 1 - e^{-\mu} \sum_{k=0}^{n} \frac{\mu^k}{k!} (1 - p^{n-k})
 }
+\quad \text{(5}
 $$
 
 This formula gives us the total probability that a gambler **eventually bankrupts the casino**, by summing up all the ways it could happen up to the point $$\( k = n \)$$, where `n` is the number of rounds the casino can resist.
@@ -338,6 +333,7 @@ n \leftarrow
 n + (1 + a), & \text{if the casino wins} \\
 n - 1, & \text{if the gambler wins}
 \end{cases}
+\quad \text{(1.1}
 $$
 
 The effect? The gambler has to win "more times" to reach $$\( n \)$$ and bankrupt the casino.  
@@ -364,6 +360,7 @@ $$
 p^{n(1 + a) - k}, & k \leq n \\
 1, & k > n
 \end{cases}
+\quad \text{(4.1}
 $$
 
 And simplifying:
@@ -372,6 +369,7 @@ $$
 \boxed{
 \text{Pro}(n) = 1 - e^{-\mu} \sum_{k=0}^{n} \frac{\mu^k}{k!} \left( 1 - p^{n(1 + a) - k} \right)
 }
+\quad \text{(5.1}
 $$
 
 > Note: Using $$\( n(1 + a) \)$$ instead of $$\( n + (1 + a) \)$$ doesn’t change the meaning. It’s just a compact way to express the casino’s overall lead due to its advantage.
