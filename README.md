@@ -75,3 +75,11 @@ Here:
 
 This expression gives us the "first version" of the Risk of Ruin (ROR) and shows how the win probability `p`, the number of gambler wins `k`, and the casino’s initial capital `n` are related.
 
+$$
+\text{Pro}(n) =
+\begin{cases}
+p^{n-k}, & \text{if } k \leq n \\
+1, & \text{if } k > n
+\end{cases}
+$$
+
