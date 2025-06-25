@@ -8,11 +8,9 @@ That curiosity led me to the following question:
 **Can a casino actually go bankrupt if a gambler gets lucky enough?**  
 This is the essence of the Risk of Ruin (ROR) the probability that a casino loses all its capital due to a rare sequence of wins by a player. While casinos are designed with a statistical advantage (house edge), randomness introduces a non-zero risk of failure.
 
-To analyze this, I study a probabilistic model based on **binomial distributions**, **Poisson approximations**, and the concept of **house edge**, inspired by the paper from Siu et al. (2023). This project allowed me to apply mathematical modeling techniques commonly used in real world for analyzing failure, uncertainty, and risk to a dynamic and unpredictable scenario.
+To analyze this, I study a probabilistic model based on **binomial distributions**, **Poisson approximations**, and the concept of **house edge**, inspired by the paper from (Siu et al., 2023). 
+This project allowed me to apply mathematical modeling techniques commonly used in real world for analyzing failure, uncertainty, and risk to a dynamic and unpredictable scenario.
 
-> **Reference:**  
-> Siu, K.-M., Chan, K.-H., & Im, S.-K. (2023). A study of assessment of casinos’ risk of ruin in casino games with Poisson distribution. *Mathematics, 11*(7), 1736.  
-> https://doi.org/10.3390/math11071736
 
 ### Motivational videos
 Before diving into the math, here are a couple of short videos that introduce some of the key concepts in a simple and engaging way. They caught my attention from the start I hope they do the same for you.
@@ -266,7 +264,7 @@ $$
 \sum_{k=n+1}^{\infty} \frac{\mu^k}{k!} = \sum_{k=0}^{\infty} \frac{\mu^k}{k!} - \sum_{k=0}^{n} \frac{\mu^k}{k!}
 $$
 
-By applying the identity of the exponential series, and using the earlier trick to avoid calculating an infinite sum directly, we can rewrite the expression in a more manageable form:
+By applying the identity of the exponential series, and using the earlier trick to avoid calculating an infinite sum directly, we can rewrite the expression in a more manageable form (teachoo, 2019).
 
 $$
 \sum_{k=0}^{\infty} \frac{\mu^k}{k!} = e^{\mu}
