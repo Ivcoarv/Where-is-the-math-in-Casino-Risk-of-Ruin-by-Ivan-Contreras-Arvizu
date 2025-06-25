@@ -319,7 +319,7 @@ This formula gives us the total probability that a gambler **eventually bankrupt
 
 #### House Edge $$\rightarrow$$ the house always wins… Right?
 
-But wait!, the formula we’ve seen still isn’t complete.
+So... wait!, the formula we’ve seen still isn’t complete.
 
 Why? Well… we forgot one important thing: **the house always has an edge** Casinos don’t play fair they’re designed to win *in the long run*.  This advantage is what we call the **house edge**, and we represent it with the letter **`a`**.
 
