@@ -301,7 +301,7 @@ $$
 \text{Pro}(n) = e^{-\mu} e^{\mu} - e^{-\mu} \sum_{k=0}^{n} \frac{\mu^k}{k!} (1 - p^{n-k})
 $$
 
-Since $$ \( e^{-\mu} e^{\mu} = 1 \)$$, the final expression becomes:
+Since $$\( e^{-\mu} e^{\mu} = 1 \)$$, the final expression becomes:
 
 ---
 
