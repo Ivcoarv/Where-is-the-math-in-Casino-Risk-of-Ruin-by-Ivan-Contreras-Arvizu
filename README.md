@@ -342,12 +342,21 @@ This extra effort this "distance advantage" is what makes the casino so resilien
 
 #### Updated Formula With House Edge
 
-We now update our original formula:
+We now update our original formula using a simplified notation.  
+Instead of writing the step-by-step addition $$\( n + (1 + a) \)$$, we switch to the more compact form:
+
+$$
+n(1 + a)
+$$
+
+This expresses the **total lead** the casino accumulates over time due to the house edge, and it helps make the math easier to handle without losing meaning.
+
+So the updated probability formula becomes:
 
 $$
 \text{Pro}(n) = \sum_{k=0}^{\infty} \frac{\mu^k}{k!} e^{-\mu}
 \begin{cases}
-p^{n + (1 + a) - k}, & k \leq n \\
+p^{n(1 + a) - k}, & k \leq n \\
 1, & k > n
 \end{cases}
 $$
@@ -356,13 +365,8 @@ And simplifying:
 
 $$
 \boxed{
-\text{Pro}(n) = 1 - e^{-\mu} \sum_{k=0}^{n} \frac{\mu^k}{k!} \left( 1 - p^{(n + (1 + a)) - k} \right)
+\text{Pro}(n) = 1 - e^{-\mu} \sum_{k=0}^{n} \frac{\mu^k}{k!} \left( 1 - p^{n(1 + a) - k} \right)
 }
 $$
 
----
-
-This is our final version of the **Risk of Ruin** formula now fully accounting for the casino’s built-in advantage.
-
-
-
+> Note: Using $$\( n(1 + a) \)$$ instead of $$\( n + (1 + a) \)$$ doesn’t change the meaning. It’s just a compact way to express the casino’s overall lead due to its advantage.
