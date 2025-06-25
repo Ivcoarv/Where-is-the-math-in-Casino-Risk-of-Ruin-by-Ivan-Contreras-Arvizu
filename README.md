@@ -3,7 +3,7 @@ This repository explores the mathematical principles behind the concept of “Ri
 
 ## Personal Information
 
-<video src="https://github.com/Ivcoarv/Where-is-the-math-in-Casino-Risk-of-Ruin-by-Ivan-Contreras-Arvizu/blob/main/Hi%20video_%20second%20slide.mp4" controls width="500"></video>
+![](Hi video_second slide.gif)
 
 
 ## Introduction
