@@ -154,7 +154,13 @@ $$
 \frac{100^2}{2!} = \frac{10000}{2} = 5000
 $$
 
-Pretty close! And the larger `t` gets, the closer the approximation becomes. That’s the idea behind:
+> **Note:**  
+> Even though $$\( \binom{t}{k} \)$$ and $$\( \frac{t^k}{k!} \)$$ are not exactly equal,  
+> they become very close when `t` is large and `k` is small.  
+> This is why we can replace the binomial coefficient with a simpler form  
+> when applying the **Poisson approximation** — it simplifies the math significantly,  
+> while still giving us a good estimate.
+
 
 $$
 \binom{t}{k} \approx \frac{t^k}{k!}
