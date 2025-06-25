@@ -327,14 +327,16 @@ What does house edge really mean?
 
 Imagine a race between the gambler and the casino. Every time the gambler wins, they take one step forward. But every time the **casino** wins, it moves **more than one step** it gains a lead because of the house edge.
 
-So instead of the usual:
+$$
+n \leftarrow
+\begin{cases}
+n + (1 + a), & \text{if the casino wins} \\
+n - 1, & \text{if the gambler wins}
+\end{cases}
+$$
 
-- $$\( n \leftarrow n + 1 \)$$ when the casino wins  
-We now say:
-
-- $$\( n \leftarrow n + (1 + a) \)$$
-
-This means the gambler must now win even more times just to catch up and bankrupt the casino.   That extra effort that "unfair head start" is what makes the edge so powerful.
+The effect? The gambler has to win "more times" to reach $$\( n \)$$ and bankrupt the casino.  
+This extra effort this "distance advantage" is what makes the casino so resilient.
 
 ---
 
