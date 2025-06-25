@@ -1,6 +1,9 @@
 # Where is the math in Casino Risk of Ruin by Ivan Contreras Arvizu
 This repository explores the mathematical principles behind the concept of “Risk of Ruin” in casinos. It introduces a probabilistic model that estimates the likelihood of a casino going bankrupt, based on concepts like binomial distributions, Poisson approximation, and house edge.
 
+## Personal Information
+!{}(Hi video_second slide.mp4)
+
 ## Introduction
 Since I was young, I’ve been curious about how randomness and chance work. Although I never took formal courses in probability, I’ve always wanted to understand it better. When I had the chance to freely choose a topic, I saw this project as the perfect opportunity to explore probability through something unusual but engaging: the **Risk of Ruin** in casino games.
 
