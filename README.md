@@ -75,11 +75,22 @@ Here:
 
 This expression gives us the "first version" of the Risk of Ruin (ROR) and shows how the win probability `p`, the number of gambler wins `k`, and the casino’s initial capital `n` are related.
 
+To move from a simple random walk to a probabilistic expression, we make the following assumption:
+
+> The **gambler is allowed to play `t` times**, as many as possible, meaning the number of games is very large. With that, we can model the probability that the gambler wins exactly `k` times in `t` independent games using the **binomial distribution**:
+
 $$
-\text{Pro}(n) =
-\begin{cases}
-p^{n-k}, & \text{if } k \leq n \\
-1, & \text{if } k > n
-\end{cases}
+P(X = k) = \binom{t}{k} \cdot p^k \cdot (1 - p)^{t - k}
 $$
+
+Where:
+- \( t \): total number of games played (number of experiments)
+- \( k \): number of wins by the gambler
+- \( p \): probability of winning a single game
+- \( 1 - p \): probability of losing (or the casino winning)
+- \( \binom{t}{k} \): number of combinations of `k` wins in `t` trials
+
+This formula gives us the probability of a specific outcome — for example, that the gambler wins **exactly 5 out of 100 games**.
+
+> This is a natural extension of the binomial walk model, because now we’re not just looking at what happens *step by step*, but what happens *after a large number of games*, and what the **distribution of outcomes** looks like.
 
