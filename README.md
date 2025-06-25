@@ -5,7 +5,7 @@ This repository explores the mathematical principles behind the concept of “Ri
 
 My name is Iván Contreras Arvizu, and I am currently studying Mechanical Systems Engineering at Arkansas State University Campus Querétaro. Throughout my academic journey, I have completed courses such as Calculus I, II, and III, Linear Algebra, and Differential Equations, which have strengthened my interest in mathematics and its applications. This project was an opportunity to explore that interest further by connecting mathematical modeling with real-world scenarios combining probability theory, analysis, and a topic that was both intriguing and fun to study.
 
-![](https://github.com/Ivcoarv/Where-is-the-math-in-Casino-Risk-of-Ruin-by-Ivan-Contreras-Arvizu/blob/main/Hi%20video_%20second%20slide.gif)
+![](Hi video_second slide.gif)
 
 
 ## Introduction
