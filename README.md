@@ -225,13 +225,53 @@ $$
 
 #### Algebraic Simplification
 
-We now subtract and rearrange the second summation:
+We want to simplify this infinite sum:
+
+$$
+\sum_{k = n+1}^{\infty} \frac{\mu^k}{k!}
+$$
+
+Calculating an infinite sum directly isn't easy, but we know a useful identity:
+
+$$
+\sum_{k=0}^{\infty} \frac{\mu^k}{k!} = e^{\mu}
+$$
+
+So, we can rewrite the part we care about like this:
+
+$$
+\sum_{k = n+1}^{\infty} \frac{\mu^k}{k!} =
+\sum_{k = 0}^{\infty} \frac{\mu^k}{k!} -
+\sum_{k = 0}^{n} \frac{\mu^k}{k!}
+$$
+
+This is like subtracting the first few terms we don’t need.
+
+---
+
+Simple idea behind it, if you have:
+
+$$
+1 + 2 + 3 + 4 + 5 + \cdots
+$$
+
+And only wanted from 4 onward, you’d subtract:
+
+$$
+(1 + 2 + 3 + 4 + 5 + \cdots) - (1 + 2 + 3) = 4 + 5 + \cdots
+$$
+
+Same logic applies here — just with factorials and powers of \( \mu \).
+
+>This trick lets us avoid calculating to infinity by using a known identity and subtracting a manageable sum.
+---
+So we now subtract and rearrange the second summation:
 
 $$
 \sum_{k=n+1}^{\infty} \frac{\mu^k}{k!} = \sum_{k=0}^{\infty} \frac{\mu^k}{k!} - \sum_{k=0}^{n} \frac{\mu^k}{k!}
 $$
 
-Using the identity for exponential series:
+Using the identity for exponential series, thanks to the trick to avoid calculating to infity that we do before:
 
 $$
 \sum_{k=0}^{\infty} \frac{\mu^k}{k!} = e^{\mu}
