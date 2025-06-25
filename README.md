@@ -386,3 +386,23 @@ So throughout this project, I faced multiple challenges especially learning more
 
 This work also helped me revisit previous math concepts like summations and its algebra, limits, factorials, and exponential functions, and it taught me how to formulate a theoretical problem with real-world analogies. Although casinos going bankrupt from one lucky player is rare, the project helped me connect abstract math with practical ideas like managing risk or designing fair systems. Overall, I think the project was worth the effort, both technically and personally.
 
+## References and Their Role
+
+* These resources were key to helping me understand how binomial distributions work, and more importantly, how far they can go when modeling real-world scenarios. They gave me the tools to grasp concepts like success/failure trials and approximation methods that set the foundation for the Poisson approach later on.
+
+- Das, S. (2016). *A brief note on estimates of binomial coefficients*. [PDF](http://discretemath.imp.fu-berlin.de/DMII-2015-16/binomials.pdf)  
+- FísicayMates. (2022, October 31). *Aproximación de Poisson en la distribución binomial* [YouTube Video]. [Watch here](https://www.youtube.com/watch?v=AM1Lph7MDdM)  
+- Matemóvil. (2020). *Distribución binomial | Ejercicios resueltos | Introducción* [YouTube Video]. [Watch here](https://www.youtube.com/watch?v=-XxZGvNClkg)
+
+* This group of sources helped me move beyond binomial logic and into Poisson territory. They guided me through the transition to the Poisson approximation, including understanding exponential identities and how limits help simplify complex probability formulas. Without these, simplifying the binomial model and understanding how it behaves as trials approach infinity wouldn’t have been possible.
+
+- FísicayMates. (2019, October 9). *Distribución de Poisson | ¿Cuándo usarla? | Ejercicio resuelto*. [YouTube Video](https://www.youtube.com/watch?v=sloXWU-TmDc)  
+- Teachoo. *Limits Formula Sheet - Chapter 13 Class 11 Maths Formulas*. [Link](https://www.teachoo.com/9725/1564/Limits-Formula-Sheet/category/Limits---Limit-exists/)  
+- Math Easy Solutions. (2014, May 6). *e^x as a Limit*. [YouTube Video](https://www.youtube.com/watch?v=n0VFDT3ZObY)  
+- OpenStax. (2013). *4.4 Distribución de Poisson - Introducción a la estadística empresarial*. [Link](https://openstax.org/books/introducci%C3%B3n-estad%C3%ADstica-empresarial/pages/4-4-distribucion-de-poisson)
+
+
+* These articles gave me the real-world grounding I needed to understand how the **house edge** works in practice. They don’t just define it they show how it affects gamblers over time, and how it ensures casinos remain profitable in the long run. Their explanations helped me connect math to reality, making that part of the model more meaningful.
+
+- Maverick, J. B. (2023, September 18). *Why Does the House Always Win? A Look at Casino Profitability*. Investopedia. [Read here](https://www.investopedia.com/articles/personal-finance/110415/why-does-house-always-win-look-casino-profitability.asp)  
+- Mirroman, T., & Ward, B. (2025, April 23). *Everything you need to know about house edge in gambling*. Racingpost.com. [Read here](https://www.racingpost.com/online-casino/articles/what-is-the-house-edge-in-gambling/)
