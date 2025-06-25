@@ -124,7 +124,7 @@ $$
 
 ##### 1. **Simplifying the combination term**:
 
-The binomial coefficient:
+The binomial coefficient (Das, 2016):
 $$\binom{t}{k} = \frac{t!}{k!(t-k)!}$$
 
 When `t` is very large and `k` is small (say `k = 2` or `3`), we can approximate:
