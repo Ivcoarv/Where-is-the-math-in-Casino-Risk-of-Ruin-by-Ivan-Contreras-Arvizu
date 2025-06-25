@@ -44,7 +44,7 @@ n \leftarrow
 \begin{cases}
 n + 1, & \text{if the casino wins} \\
 n - 1, & \text{if the gambler wins}
-\end{cases}
+\end{cases} \quad \text{(1)}
 $$
 
 
@@ -64,7 +64,7 @@ $$
 \begin{cases}
 p^{n-k}, & \text{if } k \leq n \\
 1, & \text{if } k > n
-\end{cases} \quad \text{(1)}
+\end{cases} \quad \text{(2)}
 $$
 
 >Here:
@@ -117,6 +117,7 @@ Substituting $$\( p = \mu / t \)$$, we get:
 
 $$
 \lim_{t \to \infty} \binom{t}{k} \cdot \left( \frac{\mu}{t} \right)^k \cdot \left(1 - \frac{\mu}{t}\right)^{t - k}
+\quad \text{(4)}
 $$
 
 ---
