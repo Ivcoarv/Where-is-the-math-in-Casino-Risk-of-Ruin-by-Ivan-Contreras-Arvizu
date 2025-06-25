@@ -19,3 +19,7 @@ Before diving into the math, here are a couple of short videos that introduce so
 - [YouTube – Introductory Explanation](https://www.youtube.com/watch?v=ErunjUChFdg)
 - [TikTok – Concept Poisson](https://vt.tiktok.com/ZSkrYqc4X/)
 - [TikTok – Concept Binomial](https://vt.tiktok.com/ZSkr2R3Wo/)
+  
+## Preliminary Video
+This is an intrioductory video is a visual summary of my project *“Where is the math in the Casino’s Risk of Ruin?”* It introduces the key ideas behind the concept, such as how a casino can lose money over time despite having the advantage. I also explain in very basic terms the mathematical tools used like binomial, Poisson distributions, and the house edge.  
+[Watch the full video on YouTube](https://www.youtube.com/watch?v=TU_LINK_AQUI)
