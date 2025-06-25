@@ -170,7 +170,7 @@ $$
 So the full expression becomes:
 
 $$
-\lim_{t \to \infty} \binom{t}{k} \cdot \left( \frac{\mu}{t} \right)^k \cdot \left(1 - \frac{\mu}{t} \right)^{t - k}
+\lim_{t \to \infty} \frac{t^k}{k!} \cdot \left( \frac{\mu}{t} \right)^k \cdot \left(1 - \frac{\mu}{t} \right)^{t - k}
 = \frac{\mu^k e^{-\mu}}{k!}
 $$
 
