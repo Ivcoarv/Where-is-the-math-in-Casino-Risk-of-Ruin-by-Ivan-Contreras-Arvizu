@@ -255,13 +255,13 @@ $$
 1 + 2 + 3 + 4 + 5 + \cdots
 $$
 
-And only wanted from 4 onward, you’d subtract:
+And only wanted from 4 ahead, you’d subtract:
 
 $$
 (1 + 2 + 3 + 4 + 5 + \cdots) - (1 + 2 + 3) = 4 + 5 + \cdots
 $$
 
-Same logic applies here — just with factorials and powers of \( \mu \).
+Same logic applies here just with factorials and powers of $$\( \mu \)$$.
 
 >This trick lets us avoid calculating to infinity by using a known identity and subtracting a manageable sum.
 ---
