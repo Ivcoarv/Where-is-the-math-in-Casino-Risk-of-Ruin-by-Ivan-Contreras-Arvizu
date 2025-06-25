@@ -292,7 +292,7 @@ $$
 Which becomes:
 
 $$
-\-sum_{k=0}^{n} \frac{\mu^k}{k!} (1 - p^{n-k})
+\-\sum_{k=0}^{n} \frac{\mu^k}{k!} (1 - p^{n-k})
 $$
 
 Finally, take out the common factor:
