@@ -87,7 +87,7 @@ $$
 >- \( k \): number of wins by the gambler
 >- \( p \): probability of winning a single game
 >- \( 1 - p \): probability of losing (or the casino winning)
->- \( \binom{t}{k} \): number of combinations of `k` wins in `t` trials
+>- \( $$\binom{t}{k} \$$): number of combinations of `k` wins in `t` trials
 
 This formula gives us the probability of a specific outcome — for example, that the gambler wins **exactly 5 out of 100 games**.
 
