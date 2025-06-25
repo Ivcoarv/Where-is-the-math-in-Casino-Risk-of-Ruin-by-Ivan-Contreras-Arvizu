@@ -186,3 +186,93 @@ $$
 
 This is the **Poisson distribution**, and it becomes the foundation of the final model.
 
+---
+#### Poisson Approach – Total Probability of Ruin
+
+Now that we have the Poisson distribution:
+
+$$
+P(k) = \frac{\mu^k e^{-\mu}}{k!}
+$$
+
+We use it to calculate **how many rounds `k` the player needs to break the casino**.
+
+But we don't just want the probability of **one specific `k`**, right?  
+We want to compute the **total probability** that the player wins in any possible way that causes the casino to go bankrupt.
+
+That means summing up **all possible values of `k`** where the gambler succeeds. So, we define:
+
+$$
+\text{Pro}(n) = \sum_{k=0}^{\infty} \frac{\mu^k}{k!} e^{-\mu} \cdot
+\begin{cases}
+p^{n-k}, & \text{if } k \leq n \\
+1, & \text{if } k > n
+\end{cases}
+$$
+
+This function splits into two parts:
+
+- When $$\( k \leq n \)$$: the gambler hasn't caught up yet.
+- When $$\( k > n \)$$: the gambler has already surpassed the casino's capital → ruin is certain.
+
+So, we split the summation:
+
+$$
+\text{Pro}(n) = e^{-\mu} \left( \sum_{k=0}^{n} \frac{\mu^k}{k!} p^{n-k} + \sum_{k=n+1}^{\infty} \frac{\mu^k}{k!} \cdot 1 \right)
+$$
+
+---
+
+#### Algebraic Simplification
+
+We now subtract and rearrange the second summation:
+
+$$
+\sum_{k=n+1}^{\infty} \frac{\mu^k}{k!} = \sum_{k=0}^{\infty} \frac{\mu^k}{k!} - \sum_{k=0}^{n} \frac{\mu^k}{k!}
+$$
+
+Using the identity for exponential series:
+
+$$
+\sum_{k=0}^{\infty} \frac{\mu^k}{k!} = e^{\mu}
+$$
+
+We now have:
+
+$$
+\text{Pro}(n) = e^{-\mu} \left( \sum_{k=0}^{n} \frac{\mu^k}{k!} p^{n-k} + e^{\mu} - \sum_{k=0}^{n} \frac{\mu^k}{k!} \right)
+$$
+
+Group the terms:
+
+$$
+\sum_{k=0}^{n} \frac{\mu^k}{k!} p^{n-k} - \sum_{k=0}^{n} \frac{\mu^k}{k!} = \sum_{k=0}^{n} \frac{\mu^k}{k!} (p^{n-k} - 1)
+$$
+
+Which becomes:
+
+$$
+- \sum_{k=0}^{n} \frac{\mu^k}{k!} (1 - p^{n-k})
+$$
+
+Finally, take out the common factor:
+
+$$
+\text{Pro}(n) = e^{-\mu} e^{\mu} - e^{-\mu} \sum_{k=0}^{n} \frac{\mu^k}{k!} (1 - p^{n-k})
+$$
+
+Since \( e^{-\mu} e^{\mu} = 1 \), the final expression becomes:
+
+---
+
+#### Final Probability of Ruin (before house edge):
+
+$$
+\boxed{
+\text{Pro}(n) = 1 - e^{-\mu} \sum_{k=0}^{n} \frac{\mu^k}{k!} (1 - p^{n-k})
+}
+$$
+
+This formula gives us the total probability that a gambler **eventually bankrupts the casino**, by summing up all the ways it could happen up to the point $$\( k = n \)$$, where `n` is the number of rounds the casino can resist.
+
+
