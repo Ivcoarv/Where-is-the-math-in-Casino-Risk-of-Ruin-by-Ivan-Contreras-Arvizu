@@ -39,13 +39,14 @@ Let **`n`** be the number of times the casino can afford to lose before going ba
 
 This value changes depending on the outcome of each round:
 
-\[
+$$
 n \leftarrow
 \begin{cases}
 n + 1, & \text{if the casino wins} \\
 n - 1, & \text{if the gambler wins}
 \end{cases}
-\]
+$$
+
 
 If `n ≤ 0`, the casino has lost all of its capital — this means **bankruptcy**.
 
@@ -58,11 +59,13 @@ These probabilities define how the value of `n` changes round by round, creating
 
 To estimate the likelihood that the casino goes bankrupt, we define a probability function:
 
-\[\text{Pro}(n) =
+$$
+\text{Pro}(n) =
 \begin{cases}
 p^{n-k}, & \text{if } k \leq n \\
 1, & \text{if } k > n
-\end{cases}\]
+\end{cases}
+$$
 
 Here:
 
