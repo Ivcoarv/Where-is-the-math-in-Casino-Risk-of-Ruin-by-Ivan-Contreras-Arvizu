@@ -22,7 +22,7 @@ Before diving into the math, here are a couple of short videos that introduce so
   
 ## Preliminary Video
 This is an intrioductory video is a visual summary of my project *“Where is the math in the Casino’s Risk of Ruin?”* It introduces the key ideas behind the concept, such as how a casino can lose money over time despite having the advantage. I also explain in very basic terms the mathematical tools used like binomial, Poisson distributions, and the house edge.  
-[Watch the full video on YouTube](https://www.youtube.com/watch?v=TU_LINK_AQUI)
+[Watch the full video on YouTube](https://youtu.be/p2Rm3tjNqXc)
 
 ## Hands-On (Start with Technicalities)
 Now that we’ve introduced the general idea of the project, let’s move on to the technical side of the model.
